@@ -1,0 +1,28 @@
+eplicaCount: 1
+labels:
+  app: frontend
+
+image:
+  repository: syash7202/frontend
+  tag: 1 # Will be updated by Argo CD Image Updater
+  pullPolicy: Always
+service:
+  type: NodePort
+  port: 3000
+resources:
+  requests:
+    cpu: 100m
+    memory: 256Mi
+  limits:
+    cpu: 300m
+    memory: 512Mi
+
+livenessProbe:
+  httpGet:
+    path: /
+    port: 3000
+
+readinessProbe:
+  httpGet:
+    path: /
+    port: 3000
