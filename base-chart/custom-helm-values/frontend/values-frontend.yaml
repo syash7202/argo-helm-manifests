@@ -3,7 +3,7 @@ labels:
   app: frontend
 
 image:
-  repository: syash7202/frontend
+  repository: syash7202/client-app
   tag: 1 # Will be updated by Argo CD Image Updater
   pullPolicy: Always
 service:
