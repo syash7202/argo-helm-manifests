@@ -4,7 +4,7 @@ labels:
 
 image:
   repository: syash7202/client-app
-  tag: 1 # Will be updated by Argo CD Image Updater
+  tag: 10
   pullPolicy: Always
 service:
   type: NodePort
