@@ -1,0 +1,8 @@
+helm:
+  parameters:
+  - name: image.name
+    value: syash7202/client-app
+    forcestring: true
+  - name: image.tag
+    value: "12"
+    forcestring: true
